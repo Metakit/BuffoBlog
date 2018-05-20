@@ -3,18 +3,18 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>登录</title>
+	<title>注册</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-<body class="login">
+<body class="register">
 
 	<div class="logo">
 		<img src="./static/logo.png" width="175" height="100">
 	</div>
 
-	<div class="login_border">
-		<div class="login_padding" id="ilogin_padding">
+	<div class="register_border">
+		<div class="register_padding" id="iregister_padding">
 			<h2>用户名/昵称</h2>
 
 			<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
@@ -23,19 +23,16 @@
 
 			<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
 
-			<p class="forgot_password">
-				<a id="iforget_password" href="javascript:void(0);">忘记密码？</a>
-			</p>
+			<h2>确认密码</h2>
 
-			<input type="checkbox" name="checkbox" id="iremember_me">
-			<label for="checkbox">记住我</label>
+			<input type="text" class="password_confirm_text" id="ipassword_confirm_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
 
 			<br>
 
-			<input type="image" name="button" class="login_button" id="ilogin_button" onmousemove="this.src='./static/login_button_move.png'" onmouseout="this.src='./static/login_button_out.png'" src="./static/login_button_out.png">
+			<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
 			</input>
 
-			<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
+			<input type="image" name="button" class="back_button" id="iback_button" onmousemove="this.src='./static/back_button_move.png'" onmouseout="this.src='./static/back_button_out.png'" src="./static/back_button_out.png">
 			</input>
 		</div>
 	</div>
