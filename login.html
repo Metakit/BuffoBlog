@@ -8,47 +8,55 @@
 </head>
 
 <body class="login">
+	
+	<div class="login_middle">
 
-	<div class="logo">
-		<img src="./static/logo.png" width="175" height="100">
-	</div>
-
-	<div class="login_border">
-		<div class="login_padding" id="ilogin_padding">
-			<h2>用户名/昵称</h2>
-
-			<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-
-			<h2>密码</h2>
-
-			<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-
-			<p class="forgot_password">
-				<a id="iforget_password" href="javascript:void(0);">忘记密码？</a>
-			</p>
-
-			<input type="checkbox" name="checkbox" id="iremember_me">
-			<label for="checkbox">记住我</label>
-
-			<br>
-
-			<input type="image" name="button" class="login_button" id="ilogin_button" onmousemove="this.src='./static/login_button_move.png'" onmouseout="this.src='./static/login_button_out.png'" src="./static/login_button_out.png">
-			</input>
-
-			<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
-			</input>
+		<div class="logo">
+			<img id="logo_img" src="./static/logo.png" width="175" height="100">
 		</div>
-	</div>
-
-	<div class="rem_sub">
-		<div class="rem_sub_l">
+	
+		<div class="login_border">
+			<div class="login_padding" id="ilogin_padding">
+				<h2>用户名/昵称</h2>
+	
+				<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=	null"></input>
+	
+				<h2>密码</h2>
+	
+				<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=	null"></input>
+	
+				<p class="forgot_password">
+					<a id="iforget_password" href="javascript:void(0);">忘记密码？</a>
+				</p>
+	
+				<input type="checkbox" name="checkbox" id="iremember_me">
+				<label for="checkbox">记住我</label>
+	
+				<br>
+	
+				<input type="image" name="button" class="login_button" id="ilogin_button" onmousemove="this.src='./static/login_button_move.png'" onmouseout="	this.src='./static/login_button_out.png'" src="./static/login_button_out.png">
+				</input>
+	
+				<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" 	onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
+				</input>
+			</div>
 		</div>
+	
+		<div class="rem_sub">
+			<div class="rem_sub_l">
+			</div>
+		</div>
+
 	</div>
 
 	<div class="copyright">
-		<p align="center"> 
-			@Copyright - BuffoBlog Team - [
+		<p align="center">
+			@2018 - BuffoBlog Team 保留所有权利 - [
 			<a href="https://github.com/Metakit/BuffoBlog" target="_blank">Github</a>
+			-
+			<a href="./main_page.html" target="_blank">BuffoBlog</a>
+			-
+			<a href="./about_us.html" target="_blank">关于</a>
 			]
 		</p>
 	</div>

@@ -15,17 +15,27 @@
 
 	<div class="register_border">
 		<div class="register_padding" id="iregister_padding">
-			<h2>用户名/昵称</h2>
+			<h2>注册新用户</h2>
 
+			<h2>邮箱</h2>
+			<input type="text" class="email_text" id="iemail_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
+			<p>需要通过邮件激活账户</p>
+
+			<h2>用户名</h2>
 			<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
+			<p>不少于4个字符</p>
+
+			<h2>昵称</h2>
+			<input type="text" class="nickname_text" id="inickname_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
+			<p>不少于2个字符</p>
 
 			<h2>密码</h2>
-
 			<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
+			<p>不少于8个字符，支持字母、数字、特殊字符</p>
 
 			<h2>确认密码</h2>
-
 			<input type="text" class="password_confirm_text" id="ipassword_confirm_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
+			<p>请输入确认密码</p>
 
 			<br>
 
@@ -34,6 +44,8 @@
 
 			<input type="image" name="button" class="back_button" id="iback_button" onmousemove="this.src='./static/back_button_move.png'" onmouseout="this.src='./static/back_button_out.png'" src="./static/back_button_out.png">
 			</input>
+
+			<p>点击“注册”按钮，即表示您同意并愿意遵守<a href="./user_agreement.html" target="_blank">用户协议</a>。</p>
 		</div>
 	</div>
 
@@ -43,9 +55,13 @@
 	</div>
 
 	<div class="copyright">
-		<p align="center"> 
-			@Copyright - BuffoBlog Team - [
+		<p align="center">
+			@2018 - BuffoBlog Team 保留所有权利 - [
 			<a href="https://github.com/Metakit/BuffoBlog" target="_blank">Github</a>
+			-
+			<a href="./main_page.html" target="_blank">BuffoBlog</a>
+			-
+			<a href="./about_us.html" target="_blank">关于</a>
 			]
 		</p>
 	</div>
