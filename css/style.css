@@ -1,13 +1,82 @@
 @charset "utf-8";
 
-body { margin:0; background:#e7e7e7; color:#797979; }
-h1, h2, h3, h4, h5, h6 { font-family:"microsoft yahei", Arial, Helvetica, sans-serif; font-size:18px; font-weight:normal; margin:0; padding:0; }
-ol, ul, li, div, p, dl, dt, dd { list-style:none; padding:0; font-size:12px; font-family:Arial, Helvetica, sans-serif; margin:0; }
-a, img, table, td, tr { border:none; }
-a { color:#2D2D2D ;text-decoration:none}
+body { 
+	margin: 0; 
+	background: #e7e7e7; 
+	color: #797979; 
+	background-image: url(../static/login_bg.gif); 
+}
+h1, h2 { 
+	font-family: "microsoft yahei", Arial, Helvetica, sans-serif; 
+	font-size: 18px; 
+	font-weight: normal; 
+	margin: 0; 
+	padding: 0; 
+}
+ol, ul, li, div, p, dl, dt, dd { 
+	list-style: none; 
+	padding: 0; 
+	font-size: 12px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	margin: 0; 
+}
+a, img, table, td, tr { border: none; }
+a { color: #2D2D2D ;text-decoration: none}
 
-input, select, textarea { font-family:Arial, Helvetica, sans-serif; padding:1px;}
+/*login*/
 
 .login_middle { width: 400px; margin-top: 100px; margin-left: auto; margin-right: auto; }
 .logo { text-align: center; cursor:pointer; }
 #logo_img { margin: 0 auto; }
+.login_block { margin-top: 30px; background: #FFFFFF; box-shadow: 0px 0px 5px #888888; }
+
+#div1 { height: 20px; }
+#div2 { height: 1px; }
+
+#remember_me { margin-left: 20px; float:left; }
+#forget_password { margin-right: 20px; float: right; }
+
+.input_h2 { margin-left: 20px; }
+.input_control {
+	width:360px;
+	margin:10px auto 20px auto;
+	font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+input[type="text"], input[type="password"], .btn {
+	box-sizing: border-box;
+	font-size: 1.2em;
+	height: 2.5em;
+	line-height: 2.2em;
+	border-radius: 4px;
+	border: 1px solid #c8cccf;
+	color: #6a6f77;
+	-web-kit-appearance: none;
+	-moz-appearance: none;
+	display: block;
+	outline: 0;
+	padding: 0 1em;
+	text-decoration: none;
+	width: 100%;
+}
+input[type="text"]:focus, input[type="password"]:focus { border: 1px solid #5677fc; box-shadow: 0px 0px 3px #888888; }
+.btn { text-align: center; color: #ffffff; }
+.btn:hover { box-shadow: 0px 0px 6px #888888; }
+#btn_login_try { background: #5677fc; }
+#btn_register { background: #259b24; }
+
+/*register*/
+.register_middle { margin: 50px 300px; background: #FFFFFF; box-shadow: 0px 0px 5px #888888; overflow:auto; }
+.register_left { margin-left: 70px; padding-top: 100px; width: 305px; height: 240px; float: left; }
+.divider{  
+    margin: 50px 0 0 70px;
+    border-top: 400px;
+    width: 1px;
+    height: 400px;
+    ackground: #dddddd;
+    text-align: center;
+    float: left;
+}
+.register_right { margin: 30px 0 30px 70px; float: left; }
+#blue_house { width: 305px; height: 240px; border-radius: 7px; }
+#reg_new_user { margin-top: 15px; text-align: center; font-size: 25px; color: #222222; }
+.word_left { margin-top: 15px; margin-bottom: 5px; }
