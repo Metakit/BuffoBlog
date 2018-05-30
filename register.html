@@ -9,48 +9,52 @@
 
 <body class="register">
 
-	<div class="logo">
-		<img src="./static/logo.png" width="175" height="100">
-	</div>
+	<div class="register_middle">
 
-	<div class="register_border">
-		<div class="register_padding" id="iregister_padding">
-			<h2>注册新用户</h2>
+		<div class="register_left">
+			
+			<img id="blue_house" src="./static/blue_house.jpg">
+			<h1 id="reg_new_user">注册新用户</h1>
 
-			<h2>邮箱</h2>
-			<input type="text" class="email_text" id="iemail_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-			<p>需要通过邮件激活账户</p>
-
-			<h2>用户名</h2>
-			<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-			<p>不少于4个字符</p>
-
-			<h2>昵称</h2>
-			<input type="text" class="nickname_text" id="inickname_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-			<p>不少于2个字符</p>
-
-			<h2>密码</h2>
-			<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-			<p>不少于8个字符，支持字母、数字、特殊字符</p>
-
-			<h2>确认密码</h2>
-			<input type="text" class="password_confirm_text" id="ipassword_confirm_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=null"></input>
-			<p>请输入确认密码</p>
-
-			<br>
-
-			<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
-			</input>
-
-			<input type="image" name="button" class="back_button" id="iback_button" onmousemove="this.src='./static/back_button_move.png'" onmouseout="this.src='./static/back_button_out.png'" src="./static/back_button_out.png">
-			</input>
-
-			<p>点击“注册”按钮，即表示您同意并愿意遵守<a href="./user_agreement.html" target="_blank">用户协议</a>。</p>
 		</div>
-	</div>
 
-	<div class="rem_sub">
-		<div class="rem_sub_l">
+		<div class="divider"></div>
+
+		<div class="register_right">
+			<div class="register_container" id="iregister_container">
+				
+				<h2 class="word_left">邮箱</h2>
+				<input type="text" class="form_input" maxlength="20" placeholder="需要通过邮件激活账户">	</input>
+				<p></p>
+	
+				<h2 class="word_left">用户名</h2>
+				<input type="text" class="form_input" maxlength="20" placeholder="4到20个字符"></input>
+				<p></p>
+	
+				<h2 class="word_left">昵称</h2>
+				<input type="text" class="form_input" maxlength="20" placeholder="2到20个字符"></input>
+				<p></p>
+	
+				<h2 class="word_left">密码</h2>
+				<input type="password" class="form_input" maxlength="20" placeholder="6到20个字符，支持字母数字特殊字符"></input>
+				<p></p>
+	
+				<h2 class="word_left">确认密码</h2>
+				<input type="password" class="form_input" maxlength="20" placeholder="请输入确认密码"></input>
+				<p></p>
+	
+				<br>
+	
+				<div class="input_control">
+					<a class="btn" id="btn_regtry" href="./blank.html">注册</a>
+				</div>
+				<div class="input_control">
+					<a class="btn" id="btn_register" href="./blank.html">返回</a>
+				</div>
+	
+				<p>点击“注册”按钮，即表示您同意并愿意遵守<a href="./user_agreement.html" target="_blank">用户协议</a>。</p>
+
+			</div>
 		</div>
 	</div>
 

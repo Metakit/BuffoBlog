@@ -12,40 +12,41 @@
 	<div class="login_middle">
 
 		<div class="logo">
-			<img id="logo_img" src="./static/logo.png" width="175" height="100">
+			<img id="logo_img" src="./static/logo.png">
 		</div>
 	
-		<div class="login_border">
-			<div class="login_padding" id="ilogin_padding">
-				<h2>用户名/昵称</h2>
-	
-				<input type="text" class="username_text" id="iusername_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=	null"></input>
-	
-				<h2>密码</h2>
-	
-				<input type="text" class="password_text" id="ipassword_text" onfocus="this.style.backgroundColor='#FFCC88'" onblur="this.style.backgroundColor=	null"></input>
-	
-				<p class="forgot_password">
-					<a id="iforget_password" href="javascript:void(0);">忘记密码？</a>
-				</p>
-	
-				<input type="checkbox" name="checkbox" id="iremember_me">
+		<div class="login_block">
+			<div class="login_container" id="ilogin_container">
+
+				<div id="div1"></div>
+
+				<h2 class="input_h2">用户名</h2>
+				<div class="input_control">
+					<input type="text" class="form_input" maxlength="20" placeholder="输入用户名"/>
+				</div>
+				<h2 class="input_h2">密码</h2>
+				<div class="input_control">
+					<input type="password" class="form_input" maxlength="20" placeholder="输入密码"/>
+				</div>
+
+				<input type="checkbox" id="remember_me">
 				<label for="checkbox">记住我</label>
-	
-				<br>
-	
-				<input type="image" name="button" class="login_button" id="ilogin_button" onmousemove="this.src='./static/login_button_move.png'" onmouseout="	this.src='./static/login_button_out.png'" src="./static/login_button_out.png">
-				</input>
-	
-				<input type="image" name="button" class="register_button" id="iregister_button" onmousemove="this.src='./static/register_button_move.png'" 	onmouseout="this.src='./static/register_button_out.png'" src="./static/register_button_out.png">
-				</input>
+
+				<a id="forget_password" href="javascript:void(0);">忘记密码？</a>
+
+				<div class="input_control">
+					<a class="btn" id="btn_login_try" href="./blank.html">登录</a>
+				</div>
+				<div class="input_control">
+					<a class="btn" id="btn_register" href="./register.html">注册</a>
+				</div>
+
+				<div id="div2"></div>
+
 			</div>
 		</div>
-	
-		<div class="rem_sub">
-			<div class="rem_sub_l">
-			</div>
-		</div>
+
+		<div id="div1"></div>
 
 	</div>
 
