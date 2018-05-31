@@ -27,8 +27,8 @@ a { color: #2D2D2D ;text-decoration: none}
 
 .login_middle { width: 400px; margin-top: 100px; margin-left: auto; margin-right: auto; }
 .logo { text-align: center; cursor:pointer; }
-#logo_img { margin: 0 auto; }
-.login_block { margin-top: 30px; background: #FFFFFF; box-shadow: 0px 0px 5px #888888; }
+#logo_img { margin: 0 auto; width:400px; }
+.login_block { background: #FFFFFF; box-shadow: 0px 0px 5px #888888; }
 
 #div1 { height: 20px; }
 #div2 { height: 1px; }
@@ -65,7 +65,7 @@ input[type="text"]:focus, input[type="password"]:focus { border: 1px solid #5677
 #btn_register { background: #259b24; }
 
 /*register*/
-.register_middle { margin: 50px 300px; background: #FFFFFF; box-shadow: 0px 0px 5px #888888; overflow:auto; }
+.register_middle { margin: 50px 300px; width: 919px; background: #FFFFFF; box-shadow: 0px 0px 5px #888888; overflow:auto; }
 .register_left { margin-left: 70px; padding-top: 100px; width: 305px; height: 240px; float: left; }
 .divider{  
     margin: 50px 0 0 70px;
@@ -82,3 +82,22 @@ input[type="text"]:focus, input[type="password"]:focus { border: 1px solid #5677
 .word_left { margin-top: 15px; margin-bottom: 5px; }
 #btn_register_try { background: #5677fc; }
 #btn_back_login { color: #222222; }
+
+/*index*/
+.index { background-image: none; }
+.slogan, .navbar { margin: 0 15%; }
+.slogan { background: #6464d5; height: 150px; }
+.navbar { background: #4c4c57; height: 50px; }
+#index_logo { height: 100px; }
+.navbar_li { 
+	height: 50px; 
+	width: 104px; 
+	float: left; 
+	font-size: 20px; 
+	text-align: center;
+	font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+.navbar_li:hover { background: #6464d5; }
+.navbar_a { color: #ffffff; line-height: 50px; }
+#zhuzhan { width: 75px; }
