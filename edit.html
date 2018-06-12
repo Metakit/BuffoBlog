@@ -5,12 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>关于我们</title>
+	<title>Metak</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/pagination.css">
 </head>
 
-<body class="about_us">
+<body class="edit">
 
 	<header class="header" id="header">
 
@@ -27,19 +27,30 @@
 				<ul class="navbar_ul">
 					<li class="navbar_li" id="zhuzhan"><a class="navbar_a" href="./index.html">主站</a></li>
 					<li class="navbar_li"><a class="navbar_a" href="./user_index.html">我的首页</a></li>
-					<li class="navbar_li"><a class="navbar_a" href="./edit.html">新建文章</a></li>
+					<li class="navbar_li"><a class="navbar_a" href="javascript:void(0);">新建文章</a></li>
 					<li class="navbar_li"><a class="navbar_a" href="./about_us.html">关于我们</a></li>
 				</ul>
 			</div>
 		</div>
+		<div class="blue_line" id="narrow_line"></div>
 		
 	</header>
 
-	<div class="about_block">
-		<h6>BuffoBlog是一个Web程序设计课的项目，完全开源。</h6>
-		<br>
-		<h6>项目（前端）Github地址：<a href="https://github.com/Metakit/BuffoBlog" target="_blank" style="color:#00dd00;">点击这里</a></h6>
-		<h6>项目（后端）Github地址：<a href="https://github.com/WayToGn/blog-backend" target="_blank" style="color:#00dd00;">点击这里</a></h6>
-	</div>
+	<div class="edit_block">
+		
+		<div class="edit_header">
+			<input type="text" name="edit_header_input" id="edit_header_input">
+		</div>
 
+		<div class="edit_content">
+			<textarea id="edit_content_input"></textarea>
+		</div>
+
+		<div>
+			<li class="user_li"><a class="user_a" href="./user_index.html">发布</a></li>
+			<li class="user_li"><a class="user_a" href="./user_index.html">返回</a></li>
+		</div>
+
+	</div>
+	
 </body>

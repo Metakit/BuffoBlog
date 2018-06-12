@@ -26,7 +26,8 @@
 			<div class="navbar">
 				<ul class="navbar_ul">
 					<li class="navbar_li" id="zhuzhan"><a class="navbar_a" href="./index.html">主站</a></li>
-					<li class="navbar_li"><a class="navbar_a" href="./blank.html">我的首页</a></li>
+					<li class="navbar_li"><a class="navbar_a" href="./user_index.html">我的首页</a></li>
+					<li class="navbar_li"><a class="navbar_a" href="./edit.html">新建文章</a></li>
 					<li class="navbar_li"><a class="navbar_a" href="./about_us.html">关于我们</a></li>
 				</ul>
 			</div>
@@ -41,21 +42,27 @@
 			<div class="hot_48h">
 				
 				<header class="index_header">
-					<h4 class="block_title">48小时热门排行</h1>
+					<h4 class="block_title">48小时热门排行</h4>
 					<div class="title_line"></div>
 				</header>
 				<div class="hot_48h_block">
 					<div class="hot_48h_list">
 						<span class="hot_label" id="hot_label_1">1</span>
-						<h5 class="hot_title"><a class="title_link" href="javascript:void(0);">Lissajous 曲线的动画演示</a></h5>
+						<h5 class="hot_title"><a class="title_link" href=".\article.html">Lissajous 曲线的动画演示</a></h5>
+						<div class="hot_likes">
+							<div class="heart_icon"></div>
+							<h6 class="likes_word">10000 喜欢</a>
+						</div>
+						<!--
 						<div class="hot_likes">
 							<div class="heart_icon"></div>
 							<h6 class="likes_word">10000 喜欢</h6>
 						</div>
+						-->
 					</div>
 					<div class="hot_48h_list">
 						<span class="hot_label" id="hot_label_2">2</span>
-						<h5 class="hot_title"><a class="title_link" href="javascript:void(0);">Lissajous 曲线的动画演示</a></h5>
+						<h5 class="hot_title"><a class="title_link" href=".\article.html">Lissajous 曲线的动画演示</a></h5>
 						<div class="hot_likes">
 							<div class="heart_icon"></div>
 							<h6 class="likes_word">1000 喜欢</h6>
@@ -63,7 +70,7 @@
 					</div>
 					<div class="hot_48h_list">
 						<span class="hot_label" id="hot_label_3">3</span>
-						<h5 class="hot_title"><a class="title_link" href="javascript:void(0);">Lissajous 曲线的动画演示</a></h5>
+						<h5 class="hot_title"><a class="title_link" href=".\article.html">Lissajous 曲线的动画演示</a></h5>
 						<div class="hot_likes">
 							<div class="heart_icon"></div>
 							<h6 class="likes_word">100 喜欢</h6>
@@ -71,7 +78,7 @@
 					</div>
 					<div class="hot_48h_list">
 						<span class="hot_label" id="hot_label_4">4</span>
-						<h5 class="hot_title"><a class="title_link" href="javascript:void(0);">Lissajous 曲线的动画演示</a></h5>
+						<h5 class="hot_title"><a class="title_link" href=".\article.html">Lissajous 曲线的动画演示</a></h5>
 						<div class="hot_likes">
 							<div class="heart_icon"></div>
 							<h6 class="likes_word">10 喜欢</h6>
@@ -79,7 +86,7 @@
 					</div>
 					<div class="hot_48h_list">
 						<span class="hot_label" id="hot_label_4">5</span>
-						<h5 class="hot_title"><a class="title_link" href="javascript:void(0);">Lissajous 曲线的动画演示</a></h5>
+						<h5 class="hot_title"><a class="title_link" href=".\article.html">Lissajous 曲线的动画演示</a></h5>
 						<div class="hot_likes">
 							<div class="heart_icon"></div>
 							<h6 class="likes_word">1 喜欢</h6>
@@ -92,14 +99,14 @@
 			<div class="my_focus">
 
 				<header class="index_header">
-					<h4 class="block_title">我的关注</h1>
+					<h4 class="block_title">最近文章</h4>
 				</header>
 
 				<div class="title_line"></div>
 				
 				<article class="post">
 					<div class="post_header">
-						<h3 class="post_title"><a class="title_link" href="javascript:void(0);">将进酒·君不见黄河之水天上来</a></h1>
+						<h3 class="post_title"><a class="title_link" href=".\article.html">将进酒·君不见黄河之水天上来</a></h3>
 					</div>
 					<div class="post_content">
 						<div class="author_image">
@@ -125,7 +132,7 @@
 
 				<article class="post">
 					<div class="post_header">
-						<h3 class="post_title"><a class="title_link" href="javascript:void(0);">蜀道难</a></h1>
+						<h3 class="post_title"><a class="title_link" href=".\article.html">蜀道难</a></h3>
 					</div>
 					<div class="post_content">
 						<div class="author_image">
@@ -147,9 +154,9 @@
 						</h5>
 					</div>
 					<div class="post_meta">
-							<a class="post_author" href=".\blank.html">Matrix</a>
+							<a class="post_author" href=".\user_image.html">Matrix</a>
 							<p class="post_datetime">发表于 2018-6-2 11:12:03</p>
-							<a class="post_comments" href=".\blank.html">0条评论</a>
+							<a class="post_comments" href=".\article.html">0条评论</a>
 						</div>
 				</article>
 
@@ -180,8 +187,13 @@
 				</div>
 
 				<div class="user_info">
-					<h3 id="user_name"><a class="title_link" href="javascript:void(0);">Metak</a></h3>
+					<h3 id="user_name"><a class="title_link" href=".\user_index.html">Metak</a></h3>
 					<h5 id="user_slogan">谋事在人，成事在天</h4>
+				</div>
+
+				<div class="user_btn">
+					<li class="user_li"><a class="user_a" href="./user_index.html">我的首页</a></li>
+					<li class="user_li"><a class="user_a" href="./index.html">退出登录</a></li>
 				</div>
 				
 			</div>
@@ -191,7 +203,7 @@
 					<div class="search_icon"></div>
 				</li>
 				<li id="search_bar">
-					<input type="text" name="search_text" class="search_text" maxlength="50">
+					<input type="text" name="search_text" class="search_text" maxlength="30">
 				</li>
 			</div>
 			
@@ -208,7 +220,7 @@
 			@2018 - BuffoBlog Team 保留所有权利 - [
 			<a href="https://github.com/Metakit/BuffoBlog" target="_blank">Github</a>
 			-
-			<a href="./main_page.html" target="_blank">BuffoBlog</a>
+			<a href="./index.html" target="_blank">BuffoBlog</a>
 			-
 			<a href="./about_us.html" target="_blank">关于</a>
 			]
