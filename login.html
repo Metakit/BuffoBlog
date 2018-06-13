@@ -35,17 +35,8 @@
 				<a class="input_h2" id="forget_password" href="javascript:void(0);">忘记密码？</a>
 
 				<div class="input_control">
-					<a class="btn" id="btn_login_try" href="./index.html">登录</a>
+					<a class="btn" id="btn_login_try" href="javascript:void(0)">登录</a>
 				</div>
-				<script type="text/javascript">
-					document.getElementById('btn_login_try').onclick = function(){
-						var xmlhttp = new XMLHttpRequest();
-						xmlhttp.open("POST", "login.js", true);
-						request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-						xmlhttp.send("username="+document.getElementById('username').value+"&userpass="+document.getElementById('userpass').value);
-					}
-				</script>
-				<div class="input_control">
 					<a class="btn" id="btn_register" href="./register.html">注册</a>
 				</div>
 
@@ -69,5 +60,6 @@
 			]
 		</h6>
 	</div>
-	
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="./js/login.js">	</script>
 </body>
