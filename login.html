@@ -22,11 +22,11 @@
 
 				<h2 class="input_h2">用户名</h2>
 				<div class="input_control">
-					<input type="text" class="form_input" maxlength="20" placeholder="输入用户名"/>
+					<input type="text" class="form_input" id="username" maxlength="20" placeholder="输入用户名"/>
 				</div>
 				<h2 class="input_h2">密码</h2>
 				<div class="input_control">
-					<input type="password" class="form_input" maxlength="20" placeholder="输入密码"/>
+					<input type="password" class="form_input" id="userpass" maxlength="20" placeholder="输入密码"/>
 				</div>
 
 				<input type="checkbox" id="remember_me_check">
@@ -35,8 +35,16 @@
 				<a class="input_h2" id="forget_password" href="javascript:void(0);">忘记密码？</a>
 
 				<div class="input_control">
-					<a class="btn" id="btn_login_try" href="./blank.html">登录</a>
+					<a class="btn" id="btn_login_try" href="./index.html">登录</a>
 				</div>
+				<script type="text/javascript">
+					document.getElementById('btn_login_try').onclick = function(){
+						var xmlhttp = new XMLHttpRequest();
+						xmlhttp.open("POST", "login.js", true);
+						request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+						xmlhttp.send("username="+document.getElementById('username').value+"&userpass="+document.getElementById('userpass').value);
+					}
+				</script>
 				<div class="input_control">
 					<a class="btn" id="btn_register" href="./register.html">注册</a>
 				</div>
