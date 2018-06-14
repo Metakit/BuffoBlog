@@ -22,25 +22,21 @@
 
 		<div class="register_right">
 			<div class="register_container" id="iregister_container">
-				
-				<h2 class="word_left">邮箱</h2>
-				<input type="text" class="form_input" maxlength="20" placeholder="需要通过邮件激活账户">	</input>
-				<p></p>
 	
 				<h2 class="word_left">用户名</h2>
-				<input type="text" class="form_input" maxlength="20" placeholder="4到20个字符"></input>
+				<input type="text" class="form_input" id="username" maxlength="20" placeholder="4到20个字符"></input>
 				<p></p>
 	
 				<h2 class="word_left">昵称</h2>
-				<input type="text" class="form_input" maxlength="20" placeholder="2到20个字符"></input>
+				<input type="text" class="form_input" id="usernickname" maxlength="20" placeholder="2到20个字符"></input>
 				<p></p>
 	
 				<h2 class="word_left">密码</h2>
-				<input type="password" class="form_input" maxlength="20" placeholder="6到20个字符，支持字母数字特殊字符"></input>
+				<input type="password" class="form_input" id="userpass" maxlength="20" placeholder="6到20个字符，支持字母数字特殊字符"></input>
 				<p></p>
 	
 				<h2 class="word_left">确认密码</h2>
-				<input type="password" class="form_input" maxlength="20" placeholder="请输入确认密码"></input>
+				<input type="password" class="form_input" id="userpassconfirm" maxlength="20" placeholder="请输入确认密码"></input>
 				<p></p>
 	
 				<br>
@@ -72,5 +68,8 @@
 			]
 		</h6>
 	</div>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="./js/register.js">	</script>
 	
 </body>
